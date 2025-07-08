@@ -1,11 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 
+function MySpecialDiv({ myname }) {
+  return (
+    <div>
+      <h1>{myname}</h1>
+      <p>this is a paragraph</p>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <MySpecialDiv myname="Tejsvi"></MySpecialDiv>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
